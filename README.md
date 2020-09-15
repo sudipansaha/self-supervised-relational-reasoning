@@ -34,6 +34,23 @@ Here, you can find the essential code of the method with full training pipeline:
 The essential code above, trains a self-supervised relation module on CIFAR-10 with a Conv4 backbone.
 The backbone is stored at the end of the training and can be used for other downstream tasks (e.g. classification, image retrieval). The GPU is not required for those examples. This has been tested on `Ubuntu 18.04 LTS` with `Python 3.6` and `Pytorch 1.4`.
 
+Running instruction (Added by Sudipan)
+--------------------------------
+
+There was no env file in the original repo. So I added one. After creating the env file by command:
+
+conda env create -f environment. yml
+
+It needs to be activated:
+
+source activate selfSupRelationalLearning 
+
+(or, conda activate selfSupRelationalLearning)
+
+Then, run 
+
+python python essential_script.py
+
 
 Code to reproduce the experiments
 --------------------------------
